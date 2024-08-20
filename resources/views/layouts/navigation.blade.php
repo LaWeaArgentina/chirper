@@ -18,6 +18,15 @@
                     <x-nav-link :href="route('chirps.index')" :active="request()->routeIs('chirps.index')">
                         {{ __('Chirps') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('following')" :active="request()->routeIs('following')">
+                        {{ __('Following') }}
+                    </x-nav-link>   
+                    <x-nav-link :href="route('followers')" :active="request()->routeIs('followers')">
+                        {{ __('Followers') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('blocked')" :active="request()->routeIs('blocked')">
+                        {{ __('Blocked') }}
+                    </x-nav-link>
                 </div>
             </div>
 
